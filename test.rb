@@ -16,22 +16,18 @@ bot.command :hello do |event|
   event.send_message("Hello, #{event.user.name}!")
 end
 
-# bot.message(content:"saso") do |event|
-#     event.respond "壁!"
-# end
+def kabe
+    "<:wall2:419015797625847810>"
+end
 
 bot.message(content:"!saso") do |event|
     event.respond "壁!"
 end
-
-def kabe
-    "<:wall2:419015797625847810>"
-end
  
 bot.message(content:"ああああああああああああああああああああああああああああああ！！！！！！！！！！！（ﾌﾞﾘﾌﾞﾘﾌﾞﾘﾌﾞﾘｭﾘｭﾘｭﾘｭﾘｭﾘｭ！！！！！！ﾌﾞﾂﾁﾁﾌﾞﾌﾞﾌﾞﾁﾁﾁﾁﾌﾞﾘﾘｲﾘﾌﾞﾌﾞﾌﾞﾌﾞｩｩｩｩｯｯｯ！！！！！！！ ）") do |event|
-if[418_157_859_952_394_252, 418_182_263_436_607_506].include?(event.channel.id)
+#if[418_157_859_952_394_252, 418_182_263_436_607_506].include?(event.channel.id)
         #event.send_message("<:wall2:419007014283509771>")
         event.respond "#{event.user.mention} ここでの脱糞はお控え下さい.脱糞するなら #dappun へ."
-    end
+ #   end
 end
 bot.run
